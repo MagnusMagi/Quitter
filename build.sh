@@ -6,7 +6,8 @@ cd "$(dirname "$0")"
 swift build -c release
 APP=build/Quitter.app
 rm -rf "$APP"
-mkdir -p "$APP/Contents/MacOS"
+mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
+cp Assets/AppIcon.icns "$APP/Contents/Resources/"
 cp .build/release/Quitter "$APP/Contents/MacOS/"
 cp Info.plist "$APP/Contents/"
 codesign --force --sign - "$APP"

@@ -262,7 +262,7 @@ Make sure you're on macOS 14 or later and that the icon isn't hidden by a menu b
 
 - [ ] Notarized, signed release builds on GitHub Releases
 - [ ] Homebrew cask
-- [ ] App icon for Finder and the Settings window
+- [x] App icon
 - [ ] Readable labels for function and arrow keys in the shortcut recorder
 - [ ] Localization
 
